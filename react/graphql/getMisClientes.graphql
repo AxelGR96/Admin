@@ -1,0 +1,13 @@
+
+query getMiscClientesVtex($email: String) {
+	clientesAsignadosVtex(email: $email) {
+		idCliente,
+        nombre,
+        RFC,
+        esPropietario,
+        Sucursal  {
+            id,
+            descripcion
+        }
+  }
+}

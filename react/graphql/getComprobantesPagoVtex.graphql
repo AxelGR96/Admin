@@ -1,0 +1,23 @@
+query getComprobantesPagoVtex($email: String, $fechaInicio: String, $fechaFin: String) {
+    comprobantePagosVtex(email: $email, fechaInicio: $fechaInicio, fechaFin: $fechaFin){
+        id
+        folio
+        fechaComprobante
+        total
+        moneda
+        estatus
+        urlFolioRecibo
+            usuario {
+               idUsuarioReg
+               nombre 
+            }
+            comprobanteFiscal {
+                urlPDF
+                urlXML
+            }
+            cliente {
+                id
+                descripcion
+            }
+    }
+}

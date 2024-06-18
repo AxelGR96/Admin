@@ -1,0 +1,18 @@
+mutation createDocument($email: String, $nombre: String, $apellido: String) {
+  createDocument(
+    acronym: "CL"
+    document: {
+      fields: [
+        { key: "email", value: $email }
+        { key: "firstName", value: $nombre }
+         { key: "lastName", value: $apellido }
+      ]
+    }
+    account: "cadecomx"
+    schema: "v1"
+  ) {
+    id
+    href
+    documentId
+  }
+}

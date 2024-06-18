@@ -1,0 +1,27 @@
+query getCotizacionesVtex($email: String, $fechaInicial: String, $fechaFinal: String, $noParte: String) {
+  cotizacionesVtex(email: $email, fechaInicial: $fechaInicial, fechaFinal: $fechaFinal,noParte: $noParte ) {
+    idCotizacion,
+    cotizacion,
+    fecha,
+    sucursal,
+    ordenCompra,
+    nombreReceptor,
+    noEconomico,
+    noRequisicion,
+    subtotal,
+    Moneda,
+    Estatus,
+    facturas{
+      folio,
+      fecha,
+      comprobanteFiscal {
+        urlXML,
+        urlPDF
+      }
+    },
+    Cliente{
+      idCliente,
+      nombre
+    },
+  }
+}

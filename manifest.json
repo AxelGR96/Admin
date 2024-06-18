@@ -1,0 +1,85 @@
+{
+  "name": "my-account-extension-example",
+  "vendor": "cadecob2b",
+  "version": "0.0.1",
+  "title": "My Account - CustomApp",
+  "description": "",
+  "mustUpdateAt": "2019-07-09",
+  "dependencies": {
+    "vtex.my-account": "1.x",
+    "vtex.my-account-commons": "1.x",
+    "vtex.styleguide": "9.x",
+    "vtex.session-client": "1.x",
+    "vtex.checkout-graphql": "0.x",
+    "vtex.store-graphql": "2.x",
+    "cadecob2b.graphql-example": "0.x"
+  },
+  "policies": [
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "graphql-query"
+    },
+    {
+      "name": "AcessaTodosCarrinhos"
+    },
+    {
+      "name": "view-seller"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/seller-register/pvt/sellers"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/catalog_system/pvt/sku/stockkeepingunitbyid/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/dataentities/CL/documents"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/dataentities/CL/search"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/checkout/pub/orderForm/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/catalog_system/pub/sku/stockkeepingunitidsbyrefids"
+      }
+    }
+  ],
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "store": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

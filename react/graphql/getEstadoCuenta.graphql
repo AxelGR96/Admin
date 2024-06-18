@@ -1,0 +1,5 @@
+query getEstadoCuenta($idCliente: Int) {
+  estadoCuenta(idCliente: $idCliente) {
+    urlEstadoDeCuenta
+  }
+}

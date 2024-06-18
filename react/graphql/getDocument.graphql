@@ -1,0 +1,18 @@
+query getDocument($customer: String!) {
+  documents(
+    acronym: "CL",
+    fields: ["email","firstName","lastName"],
+    page: 1,
+    pageSize: 15,
+    where: $customer,
+    sort: "firstName ASC",
+    schema: "v1",
+    account: "cadecomx"
+  ) {
+    id
+    fields {
+      key
+      value
+    }
+  }
+}

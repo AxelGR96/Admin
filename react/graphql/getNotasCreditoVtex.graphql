@@ -1,0 +1,69 @@
+query getNotasCreditoVtex($email: String, $fechaInicio: String, $fechaFin: String) {
+    notasCredito(email: $email, fechaInicio: $fechaInicio, fechaFin: $fechaFin){
+         id
+        folio
+        fecha
+        total
+        factura {
+             id
+            serie
+            folio
+            fechaFactura
+            fechaVencimiento
+            fechaLimiteGarantia
+            total
+            saldo
+            comprobanteFiscal {
+                urlPDF
+                urlXML
+            }
+            moneda{
+                abrev
+            }
+            sucursal{
+                id
+                descripcion
+            }
+            cliente{
+                id
+                descripcion
+            }
+        }
+        comprobanteFiscal {
+            urlPDF
+            urlXML
+        }
+        moneda{
+            abrev
+        }
+        sucursal{
+            id
+            descripcion
+        }
+        cliente{
+            idCliente
+            nombre
+            rfc
+            id
+            descripcion
+            esPropietario
+            sucursal{
+                id
+                descripcion
+            }
+            credito{
+                limite
+                utilizado
+                disponible
+                dias
+                estatus
+                desplegarFormaPago
+                idCliente
+            }
+        }
+        tipo{
+            id
+            descripcion
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "my-account-plugin",
+  "dependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.3",
+    "@types/react": "^18.2.42",
+    "@types/react-intl": "^3.0.0",
+    "@types/react-router-dom": "5.3.3",
+    "apollo-client": "^2.4.7",
+    "exenv": "^1.2.2",
+    "graphql": "^14.0.2",
+    "moment": "^2.22.2",
+    "query-string": "^6.3.0",
+    "react": "^16.4.1",
+    "react-apollo": "^3.1.5",
+    "react-circular-progressbar": "^2.1.0",
+    "react-dropzone": "^5.0.1",
+    "react-intl": "^6.5.5",
+    "react-media": "^1.8.0",
+    "react-router-dom": "5.3.3",
+    "recompose": "^0.27.1",
+    "xlsx": "^0.18.5",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "cadecob2b.graphql-example": "https://test--cadecob2b.myvtex.com/_v/private/typings/linked/v1/cadecob2b.graphql-example@0.3.2+build1717705560/public/@types/cadecob2b.graphql-example",
+    "cadecob2b.my-account-extension-example": "https://test--cadecob2b.myvtex.com/_v/private/typings/linked/v1/cadecob2b.my-account-extension-example@0.0.1+build1718748395/public/@types/cadecob2b.my-account-extension-example",
+    "vtex.checkout-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.67.1/public/@types/vtex.checkout-graphql",
+    "vtex.my-account": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.27.1/public/@types/vtex.my-account",
+    "vtex.my-account-commons": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account-commons@1.7.1/public/@types/vtex.my-account-commons",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.2/public/@types/vtex.render-runtime",
+    "vtex.session-client": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.session-client@1.0.2/public/@types/vtex.session-client",
+    "vtex.store-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.170.2/public/@types/vtex.store-graphql",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.9/public/@types/vtex.styleguide"
+  }
+}

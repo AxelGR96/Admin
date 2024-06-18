@@ -1,0 +1,24 @@
+query getFacturasPagadasVtex($email: String, $fechaInicio: String, $fechaFin: String) {
+  facturasPagadas(email: $email, fechaInicio: $fechaInicio, fechaFin: $fechaFin) {
+    id
+    serie
+    folio
+    fechaFactura
+    fechaVencimiento
+    total
+    saldo
+		moneda
+    cliente{
+      id
+      descripcion
+    }
+    sucursal{
+      id
+      descripcion
+    }
+    comprobanteFiscal{
+      urlPDF
+      urlXML
+    }
+  }
+}
